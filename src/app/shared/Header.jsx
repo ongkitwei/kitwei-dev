@@ -14,23 +14,34 @@ const robotoFont = Roboto({
 
 function Header() {
   return (
-    <div className="mt-4 fixed z-50 bg-white/30 w-[85%] inset-x-0 mx-auto rounded-full flex items-center justify-center shadow-sm border-gray-100 py-2 md:border-0 md:w-full md:bg-transparent md:border-none md:shadow-none">
+    <div className="mt-4 fixed backdrop-blur-lg opacity-100 z-50 bg-white/30 w-[85%] border-[0.5px] border-gray-100 inset-x-0 mx-auto rounded-full flex items-center justify-center py-2 md:w-full md:bg-transparent md:shadow-none">
       <ul className="flex flex-row items-center justify-between">
         {/* <li className={`${dancingScript.className} text-4xl`}>kit wei</li> */}
         <div className="flex items-center gap-x-6 md:gap-x-16">
-          <li className={`${lora.className} text-sm font-semibold`}>
-            Experience
-          </li>
-          <li className={`${lora.className} text-sm font-semibold`}>
-            Projects
-          </li>
-          <li className={`${lora.className} text-sm font-semibold`}>Connect</li>
-          <li
-            className={`${lora.className} text-sm font-semibold`}
+          <a
+            className={`${lora.className} text-sm hover:underline`}
             href="#about"
           >
             About
-          </li>
+          </a>
+          <a
+            className={`${lora.className} text-sm hover:underline`}
+            href="#experience"
+          >
+            Experience
+          </a>
+          <a
+            className={`${lora.className} text-sm hover:underline`}
+            href="#projects"
+          >
+            Projects
+          </a>
+          <a
+            className={`${lora.className} text-sm hover:underline`}
+            href="#connect"
+          >
+            Connect
+          </a>
         </div>
       </ul>
     </div>
