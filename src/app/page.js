@@ -1,8 +1,8 @@
 import About from "./components/About";
 import Connect from "./components/Connect";
-import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import ShortIntro from "./components/ShortIntro";
+import Timeline from "./components/Timeline";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <ShortIntro />
       <About />
-      <Experience />
+      <Timeline />
       <Projects />
       <Connect />
     </div>
