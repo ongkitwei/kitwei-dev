@@ -22,14 +22,14 @@ function TimelineVertical() {
         <div className="timeline-start mb-12 md:text-end">
           <time className="font-mono italic">2010-2015</time>
           <div className="text-lg font-black">Rulang Primary School</div>
-          <ul className="text-md">
+          <ul className="text-md text-left">
             <li>CCA: Wushu</li>
           </ul>
         </div>
-        <hr />
+        <hr className="bg-primary" />
       </li>
       <li>
-        <hr />
+        <hr className="bg-primary" />
         <div className="timeline-middle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ function TimelineVertical() {
         <div className="timeline-end mb-10">
           <time className="font-mono italic">2016-2019</time>
           <div className="text-lg font-black">Jurongville Secondary School</div>
-          <ul className="space-y-4 pl-5 list-decimal">
+          <ul className="space-y-4 pl-5 list-decimal text-left">
             <li>
               <p className="text-base font-medium">CCA: Tchoukball</p>
               <ul className="text-sm space-y-2 mt-2 pl-0">
@@ -75,10 +75,10 @@ function TimelineVertical() {
             </li>
           </ul>
         </div>
-        <hr />
+        <hr className="bg-primary" />
       </li>
       <li>
-        <hr />
+        <hr className="bg-primary" />
         <div className="timeline-middle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ function TimelineVertical() {
         <div className="timeline-start mb-10 md:text-end">
           <time className="font-mono italic">2020-2023</time>
           <div className="text-lg font-black">Singapore Polytechnic</div>
-          <ul className="space-y-4 pl-5 list-decimal">
+          <ul className="space-y-4 pl-5 list-decimal text-left">
             <li>
               <p className="text-base font-medium">CLUB: EEE Club</p>
               <ul className="text-sm space-y-2 mt-2 pl-0">
@@ -168,10 +168,10 @@ function TimelineVertical() {
             </li>
           </ul>
         </div>
-        <hr />
+        <hr className="bg-primary" />
       </li>
       <li>
-        <hr />
+        <hr className="bg-primary" />
         <div className="timeline-middle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -215,10 +215,10 @@ function TimelineVertical() {
             </li>
           </ul>
         </div>
-        <hr />
+        <hr className="bg-primary" />
       </li>
       <li>
-        <hr />
+        <hr className="bg-primary" />
         <div className="timeline-middle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@ function TimelineVertical() {
         <div className="timeline-start mb-10 md:text-end">
           <time className="font-mono italic">2023-2025</time>
           <div className="text-lg font-black">Singapore Armed Forces (SAF)</div>
-          <ul className="space-y-4 pl-5 list-decimal">
+          <ul className="space-y-4 pl-5 list-decimal text-left">
             <li>
               <p className="text-base font-medium">
                 NATIONAL SERVICE: 3 Guards
@@ -262,10 +262,10 @@ function TimelineVertical() {
             </li>
           </ul>
         </div>
-        <hr />
+        <hr className="bg-primary" />
       </li>
       <li>
-        <hr />
+        <hr className="py-2" />
         <div className="timeline-middle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -299,7 +299,7 @@ function TimelineVertical() {
           <div className="text-lg font-black">
             Singapore Management University (SMU)
           </div>
-          <ul className="space-y-4 pl-5 list-decimal">
+          <ul className="space-y-4 pl-5 list-decimal text-left">
             <li>
               <p className="text-base font-medium">
                 Bachelor of Software Engineering:

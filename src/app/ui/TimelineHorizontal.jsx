@@ -2,8 +2,8 @@ import React from "react";
 
 function TimelineHorizontal() {
   return (
-    <div className="overflow-x-auto w-full">
-      <ul className="timeline -mt-68">
+    <div className="w-full -mt-88">
+      <ul className="timeline grid grid-cols-3">
         <li>
           <div className="timeline-start font-mono italic">2010-2015</div>
           <div className="timeline-middle">
@@ -20,16 +20,16 @@ function TimelineHorizontal() {
               />
             </svg>
           </div>
-          <div className="timeline-end timeline-box w-[400px] mr-12">
+          <div className="timeline-end timeline-box w-[300px] mr-12">
             <div className="text-lg font-black">Rulang Primary School</div>
             <ul className="text-md">
               <li>CCA: Wushu</li>
             </ul>
           </div>
-          <hr />
+          <hr className="bg-primary" />
         </li>
         <li>
-          <hr />
+          <hr className="bg-primary" />
           <div className="timeline-start font-mono italic">2016-2019</div>
           <div className="timeline-middle">
             <svg
@@ -45,7 +45,7 @@ function TimelineHorizontal() {
               />
             </svg>
           </div>
-          <div className="timeline-end timeline-box w-[400px] mr-12">
+          <div className="timeline-end timeline-box w-[300px] mr-12">
             {" "}
             <div className="text-lg font-black">
               Jurongville Secondary School
@@ -78,10 +78,10 @@ function TimelineHorizontal() {
               </li>
             </ul>
           </div>
-          <hr />
+          <hr className="bg-primary" />
         </li>
         <li>
-          <hr />
+          <hr className="bg-primary" />
           <div className="timeline-start font-mono italic">2020-2023</div>
           <div className="timeline-middle">
             <svg
@@ -97,7 +97,7 @@ function TimelineHorizontal() {
               />
             </svg>
           </div>
-          <div className="timeline-end timeline-box w-[400px] mr-12">
+          <div className="timeline-end timeline-box w-[300px] mr-12">
             <div className="text-lg font-black">Singapore Polytechnic</div>
             <ul className="space-y-4 pl-5 list-decimal">
               <li>
@@ -171,10 +171,10 @@ function TimelineHorizontal() {
               </li>
             </ul>
           </div>
-          <hr />
+          <hr className="hidden" />
         </li>
-        <li>
-          <hr />
+        <li className="-mt-50">
+          <hr className="hidden" />
           <div className="timeline-start font-mono italic">2022-2023</div>
           <div className="timeline-middle">
             <svg
@@ -190,7 +190,7 @@ function TimelineHorizontal() {
               />
             </svg>
           </div>
-          <div className="timeline-end timeline-box w-[400px] mr-12">
+          <div className="timeline-end timeline-box w-[300px] mr-12">
             {" "}
             <div className="text-lg font-black">Venti Technologies</div>
             <ul className="space-y-4 pl-5 list-decimal">
@@ -221,10 +221,10 @@ function TimelineHorizontal() {
               </li>
             </ul>
           </div>
-          <hr />
+          <hr className="bg-primary" />
         </li>
-        <li>
-          <hr />
+        <li className="-mt-50">
+          <hr className="bg-primary" />
           <div className="timeline-start font-mono italic">2023-2025</div>
           <div className="timeline-middle">
             <svg
@@ -240,7 +240,7 @@ function TimelineHorizontal() {
               />
             </svg>
           </div>
-          <div className="timeline-end timeline-box w-[400px]">
+          <div className="timeline-end timeline-box w-[300px]">
             {" "}
             <div className="text-lg font-black">
               Singapore Armed Forces (SAF)
@@ -252,6 +252,58 @@ function TimelineHorizontal() {
                 </p>
                 <ul className="text-sm space-y-2 mt-2 pl-0">
                   {["Alpha company Platoon 3 MG Commander"].map(
+                    (item, index) => (
+                      <li key={index} className="flex items-start">
+                        <svg
+                          className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <span>{item}</span>
+                      </li>
+                    )
+                  )}
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <hr className="bg-primary" />
+        </li>
+        <li className="-mt-50">
+          <hr />
+          <div className="timeline-start font-mono italic">2025-2029</div>
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+          <div className="timeline-end timeline-box w-[300px]">
+            {" "}
+            <div className="text-lg font-black">
+              Singapore Management University (SMU)
+            </div>
+            <ul className="space-y-4 pl-5 list-decimal">
+              <li>
+                <p className="text-base font-medium">
+                  Bachelor of Software Engineering:
+                </p>
+                <ul className="text-sm space-y-2 mt-2 pl-0">
+                  {["Incoming Software Engineering Student"].map(
                     (item, index) => (
                       <li key={index} className="flex items-start">
                         <svg
