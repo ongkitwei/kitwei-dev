@@ -1,10 +1,15 @@
 import React from "react";
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import { motion } from "motion/react";
 
 function TimelineVertical() {
   return (
     <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical max-w-[90%] mx-auto">
-      <li>
+      <motion.li
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 1, type: "spring", stiffness: 100 }}
+      >
         <div className="timeline-middle">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -27,8 +32,12 @@ function TimelineVertical() {
           </ul>
         </div>
         <hr className="bg-primary" />
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 1, type: "spring", stiffness: 100 }}
+      >
         <hr className="bg-primary" />
         <div className="timeline-middle">
           <svg
@@ -76,8 +85,12 @@ function TimelineVertical() {
           </ul>
         </div>
         <hr className="bg-primary" />
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 1, type: "spring", stiffness: 100 }}
+      >
         <hr className="bg-primary" />
         <div className="timeline-middle">
           <svg
@@ -169,8 +182,12 @@ function TimelineVertical() {
           </ul>
         </div>
         <hr className="bg-primary" />
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 1, type: "spring", stiffness: 100 }}
+      >
         <hr className="bg-primary" />
         <div className="timeline-middle">
           <svg
@@ -216,8 +233,12 @@ function TimelineVertical() {
           </ul>
         </div>
         <hr className="bg-primary" />
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 1, type: "spring", stiffness: 100 }}
+      >
         <hr className="bg-primary" />
         <div className="timeline-middle">
           <svg
@@ -263,8 +284,12 @@ function TimelineVertical() {
           </ul>
         </div>
         <hr className="bg-primary" />
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 1, type: "spring", stiffness: 100 }}
+      >
         <hr className="py-2" />
         <div className="timeline-middle">
           <svg
@@ -327,7 +352,7 @@ function TimelineVertical() {
             </li>
           </ul>
         </div>
-      </li>
+      </motion.li>
     </ul>
   );
 }

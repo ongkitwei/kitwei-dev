@@ -51,6 +51,44 @@ function About() {
           {/* <img src="/vsc-icon.svg" alt="description" /> */}
         </div>
       </motion.div>
+      <div className="flex flex-row gap-4 pt-4">
+        <img
+          src="/vsc-icon.svg"
+          alt="vsc-icon"
+          width={40}
+          className="border border-gray-400 rounded-md"
+        />
+        <img
+          src="/js-icon.svg"
+          alt="vsc-icon"
+          width={40}
+          className="border border-gray-400 rounded-md"
+        />
+        <img
+          src="/ts-icon.svg"
+          alt="vsc-icon"
+          width={40}
+          className="border border-gray-400 rounded-md"
+        />
+        <img
+          src="/nextjs-icon.svg"
+          alt="vsc-icon"
+          width={40}
+          className="border border-gray-400 rounded-md"
+        />
+        <img
+          src="/react-icon.svg"
+          alt="vsc-icon"
+          width={40}
+          className="border border-gray-400 rounded-md"
+        />
+        <img
+          src="/mongodb-icon.svg"
+          alt="vsc-icon"
+          width={40}
+          className="border border-gray-400 rounded-md"
+        />
+      </div>
     </div>
   );
 }

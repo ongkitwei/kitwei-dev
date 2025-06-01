@@ -19,14 +19,9 @@ function Timeline() {
       >
         Timeline
       </motion.h2>
-      <motion.div
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.3 }}
-        className="block xl:hidden"
-      >
+      <div className="block xl:hidden">
         <TimelineVertical />
-      </motion.div>
+      </div>
       <motion.div
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
