@@ -11,39 +11,35 @@ const robotoFont = Roboto({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"], // Choose the weights you need
 });
-
 function Header() {
   return (
-    <div className="mt-4 fixed backdrop-blur-lg opacity-100 z-50 bg-white w-[85%] border-[0.5px] border-gray-100 inset-x-0 mx-auto rounded-full flex items-center justify-center py-2 md:w-full md:bg-transparent md:shadow-none">
-      <ul className="flex flex-row items-center justify-between">
-        {/* <li className={`${dancingScript.className} text-4xl`}>kit wei</li> */}
-        <div className="flex items-center gap-x-6 md:gap-x-16">
-          <a
-            className={`${lora.className} text-sm hover:underline`}
-            href="#about"
-          >
-            About
-          </a>
-          <a
-            className={`${lora.className} text-sm hover:underline`}
-            href="#timeline"
-          >
-            Timeline
-          </a>
-          <a
-            className={`${lora.className} text-sm hover:underline`}
-            href="#projects"
-          >
-            Projects
-          </a>
-          <a
-            className={`${lora.className} text-sm hover:underline`}
-            href="#connect"
-          >
-            Connect
-          </a>
-        </div>
-      </ul>
+    <div className="sticky top-4 z-50">
+      <div className="flex items-center justify-evenly bg-white border-[0.5px] border-gray-100 rounded-full backdrop-blur-lg opacity-100 w-[75%] md:w-[500px] mx-auto py-2">
+        <a
+          className={`${lora.className} text-sm hover:underline`}
+          href="#about"
+        >
+          About
+        </a>
+        <a
+          className={`${lora.className} text-sm hover:underline`}
+          href="#timeline"
+        >
+          Timeline
+        </a>
+        <a
+          className={`${lora.className} text-sm hover:underline`}
+          href="#projects"
+        >
+          Projects
+        </a>
+        <a
+          className={`${lora.className} text-sm hover:underline`}
+          href="#connect"
+        >
+          Connect
+        </a>
+      </div>
     </div>
   );
 }

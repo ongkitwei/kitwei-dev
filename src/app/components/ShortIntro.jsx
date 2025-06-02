@@ -6,7 +6,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 function ShortIntro() {
   return (
-    <div className="pt-18 pb-28">
+    <div className="pt-8 pb-28">
       <div className="relative w-full h-[400px] md:h-[600px] lg:h-[900px] overflow-hidden">
         {" "}
         <Image
