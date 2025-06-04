@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { lato, lora, robotoFont, lobsterFont } from "../layout";
-import { FaGitAlt } from "react-icons/fa";
 import { motion } from "motion/react";
 
 function About() {
@@ -179,42 +178,6 @@ function About() {
             across all screen sizes.
           </p>
         </motion.div>
-        {/* <img
-          src="/vsc-icon.svg"
-          alt="vsc-icon"
-          width={40}
-          className="border border-gray-400 rounded-md"
-        />
-        <img
-          src="/js-icon.svg"
-          alt="vsc-icon"
-          width={40}
-          className="border border-gray-400 rounded-md"
-        />
-        <img
-          src="/ts-icon.svg"
-          alt="vsc-icon"
-          width={40}
-          className="border border-gray-400 rounded-md"
-        />
-        <img
-          src="/nextjs-icon.svg"
-          alt="vsc-icon"
-          width={40}
-          className="border border-gray-400 rounded-md"
-        />
-        <img
-          src="/react-icon.svg"
-          alt="vsc-icon"
-          width={40}
-          className="border border-gray-400 rounded-md"
-        />
-        <img
-          src="/mongodb-icon.svg"
-          alt="vsc-icon"
-          width={40}
-          className="border border-gray-400 rounded-md"
-        /> */}
       </div>
     </div>
   );
