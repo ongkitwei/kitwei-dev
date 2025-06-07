@@ -3,6 +3,7 @@ import React from "react";
 import { GiChargingBull } from "react-icons/gi";
 import Image from "next/image";
 import { motion } from "motion/react";
+import { lora } from "../layout";
 
 function Projects() {
   const projectLogo = [
@@ -82,40 +83,50 @@ function Projects() {
 
   return (
     <div
-      className="w-full h-fit flex flex-col items-center justify-center gap-y-3"
+      className="w-full h-fit flex flex-col items-center justify-center gap-y-3 pt-28"
       id="projects"
     >
-      {projectTitle.map((title, index) => (
-        <motion.div
-          initial={{ opacity: 0, scale: 0.85 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-[93%] min-h-[200px] rounded-2xl bg-white"
-          key={title}
-        >
-          <div className="group hover:bg-gray-300 hover:rounded-xl hover:scale-102 hover:cursor-pointer transition-transform duration-500 p-6">
-            <a href={webLinks[index]} target="_blank">
-              <div className="flex items-center gap-x-2">
-                <span className="group-hover:rotate-10 transition-transform duration-400">
-                  {projectLogo[index]}
-                </span>
-                <h3 className="font-bold text-xl text-gray-900">{title}</h3>
-              </div>
+      <motion.h2
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1.5 }}
+        transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+        className={`${lora.className} text-xl pb-6`}
+      >
+        Projects
+      </motion.h2>
+      <div className="justify-items-center grid gap-4 lg:grid lg:grid-cols-2 lg:gap-y-10 2xl:grid-cols-3 2xl:gap-4">
+        {projectTitle.map((title, index) => (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.85 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="w-[93%] min-h-[200px] rounded-2xl bg-white"
+            key={title}
+          >
+            <div className="group hover:bg-gray-300 hover:rounded-xl hover:scale-102 hover:cursor-pointer transition-transform duration-500 p-6">
+              <a href={webLinks[index]} target="_blank">
+                <div className="flex items-center gap-x-2">
+                  <span className="group-hover:rotate-10 transition-transform duration-400">
+                    {projectLogo[index]}
+                  </span>
+                  <h3 className="font-bold text-xl text-gray-900">{title}</h3>
+                </div>
 
-              <p className="text-sm pt-1.5 font-medium">
-                {projectTagLines[index]}
-              </p>
-            </a>
-          </div>
-
-          <div className="text-sm text-gray-700 px-6 pb-6">
-            {projectDescription[index]}
-            <div className="flex flex-row items-center gap-8 pt-4">
-              {projectDescriptionIcon[index]}
+                <p className="text-sm pt-1.5 font-medium">
+                  {projectTagLines[index]}
+                </p>
+              </a>
             </div>
-          </div>
-        </motion.div>
-      ))}
+
+            <div className="text-sm text-gray-700 px-6 pb-6">
+              {projectDescription[index]}
+              <div className="flex flex-row items-center gap-8 pt-4">
+                {projectDescriptionIcon[index]}
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 }

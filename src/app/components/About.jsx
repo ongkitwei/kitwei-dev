@@ -68,7 +68,7 @@ function About() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="hover:bg-green-300 w-full max-w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
+          className="hover:bg-green-300 w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
         >
           <Image
             height={55}
@@ -87,7 +87,7 @@ function About() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="hover:bg-green-300 w-full max-w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
+          className="hover:bg-green-300 w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
         >
           <Image
             height={55}
@@ -105,7 +105,7 @@ function About() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="hover:bg-green-300 w-full max-w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
+          className="hover:bg-green-300 w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
         >
           <Image
             height={55}
@@ -125,7 +125,7 @@ function About() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="hover:bg-green-300 w-full max-w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
+          className="hover:bg-green-300 w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
         >
           <Image
             height={55}
@@ -144,7 +144,7 @@ function About() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="hover:bg-green-300 w-full max-w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
+          className="hover:bg-green-300 w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
         >
           <Image
             height={55}
@@ -163,7 +163,7 @@ function About() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="hover:bg-green-300 w-full max-w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
+          className="hover:bg-green-300 w-[320px] aspect-[4/2.5] border border-gray-300 flex flex-col items-center justify-evenly rounded-xl"
         >
           <Image
             height={55}
