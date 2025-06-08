@@ -322,15 +322,15 @@ function TimelineVertical() {
         <div className="timeline-start mb-12 md:text-end">
           <time className="font-mono italic">2025-2029</time>
           <div className="text-lg font-black">
-            Singapore Management University (SMU)
+            Nanyang Technological University (NTU)
           </div>
           <ul className="space-y-4 pl-5 list-decimal text-left">
             <li>
               <p className="text-base font-medium">
-                Bachelor of Software Engineering:
+                Bachelor of Electrical & Electronic Engineering:
               </p>
               <ul className="text-sm space-y-2 mt-2 pl-0">
-                {["Incoming Software Engineering Student"].map(
+                {["Incoming EEE Student"].map(
                   (item, index) => (
                     <li key={index} className="flex items-start">
                       <svg
