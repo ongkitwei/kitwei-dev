@@ -29,24 +29,28 @@ function Projects() {
       height={30}
       className="object-cover rounded-lg"
     />,
+    <img src="/myfacecartoon.jpeg" className="w-10 rounded-full" />,
   ];
   const projectTitle = [
     "Rosterly",
     "Sweat-Lab",
     "Stock Valuator",
     "P3 Assistant Bot",
+    "Personal Portfolio",
   ];
   const projectTagLines = [
     "Manage duties with clarity, not chaos",
     "Targeted workouts, Zero planning",
     "From zero to valuation in seconds",
     "Stop typing, Start generating",
+    "A collection of work, passion, and progress",
   ];
   const projectDescription = [
     "This webapp lets duty planners quickly schedule, edit, and manage monthly guard duties with ease. A date filter helps track commander assignments, while troopers can view their own duties and team via a calendar view.",
     "SweatLab helps busy adults stay fit by instantly generating workouts based on selected duration and target muscle group. No planning needed—just choose and sweat.",
     "Stock Valuator gives retail investors instant insight into a stock’s true worth. Spot undervalued opportunities, avoid overhyped risks, and track your picks with a real-time watchlist.",
     "No more templates. No more typing. No more of those boring admin stuff. Just clear, professional incident reports — generated in seconds.",
+    "Welcome to my dev web — a hub for innovative projects, hands-on experiments, and ideas brought to life. Powered by passion, engineered with precision.",
   ];
   const projectDescriptionIcon = [
     <div className="flex flex-wrap items-center pt-2 gap-x-8">
@@ -74,11 +78,19 @@ function Projects() {
       <img src="/python-icon.svg" className="h-10" />
       <img src="/telegram-icon.svg" className="h-10" />
     </div>,
+    <div className="flex flex-wrap items-center pt-2 gap-x-8">
+      <img src="/nextjs-icon.svg" className="h-10" />
+      <img src="/js-icon.svg" className="h-10" />
+      <img src="/tailwindcss-icon.svg" className="h-10" />
+      <img src="/nodejs-icon.svg" className="w-14" />
+      <img src="/twilio-icon.svg" className="w-20" />
+    </div>,
   ];
   const webLinks = [
     "https://rosterly.vercel.app",
     "https://sweatlabb.netlify.app",
     "https://stockvaluator-next.vercel.app",
+    "https://kitwei.netlify.app",
   ];
 
   return (

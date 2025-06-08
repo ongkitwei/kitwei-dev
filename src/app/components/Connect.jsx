@@ -63,9 +63,9 @@ function Connect() {
               name: e.target.value.toUpperCase(),
             }))
           }
-          className="input rounded-lg uppercase"
+          className="input rounded-lg uppercase md:w-[45%]"
         />
-        <label className="input validator rounded-lg">
+        <label className="input validator md:w-[45%] rounded-lg">
           <svg
             className="h-[1em] opacity-50"
             xmlns="http://www.w3.org/2000/svg"
@@ -92,15 +92,15 @@ function Connect() {
           />
         </label>
         <textarea
-          className="textarea rounded-lg"
+          className="textarea rounded-lg md:w-[45%] md:aspect-2/1"
           value={connectForm.description}
           onChange={(e) =>
             setConnectForm((prev) => ({ ...prev, description: e.target.value }))
           }
-          placeholder="Dsescription"
+          placeholder="Description"
         ></textarea>
         <button
-          className="btn btn-info px-12 w-[310px]"
+          className="btn btn-info px-12 w-[300px] md:w-[45%]"
           onClick={handleSubmitButton}
         >
           {loading ? (
