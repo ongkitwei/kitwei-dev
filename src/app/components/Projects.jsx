@@ -50,7 +50,7 @@ function Projects() {
     "SweatLab helps busy adults stay fit by instantly generating workouts based on selected duration and target muscle group. No planning needed—just choose and sweat.",
     "Stock Valuator gives retail investors instant insight into a stock’s true worth. Spot undervalued opportunities, avoid overhyped risks, and track your picks with a real-time watchlist.",
     "No more templates. No more typing. No more of those boring admin stuff. Just clear, professional incident reports — generated in seconds.",
-    "Welcome to my dev web — a hub for innovative projects, hands-on experiments, and ideas brought to life. Powered by passion, engineered with precision.",
+    "Welcome to my dev we — a hub for innovative projects, hands-on experiments, and ideas brought to life. Powered by passion, engineered with precision.",
   ];
   const projectDescriptionIcon = [
     <div className="flex flex-wrap items-center pt-2 gap-x-8">
