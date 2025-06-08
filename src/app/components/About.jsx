@@ -7,14 +7,14 @@ import { motion } from "motion/react";
 function About() {
   return (
     <div
-      className="h-fit w-full flex flex-col items-center justify-center scroll-mt-18 pb-28"
+      className="h-fit w-full overflow-hidden flex flex-col items-center justify-center scroll-mt-18 pb-28"
       id="about"
     >
       <motion.h2
         initial={{ scale: 0 }}
         whileInView={{ scale: 1.5 }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
-        className={`${lora.className} text-xl pb-6`}
+        className={`${lora.className} text-xl pb-6 pt-6`}
       >
         About Me
       </motion.h2>
@@ -179,6 +179,52 @@ function About() {
           </p>
         </motion.div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        className="grid grid-cols-3 sm:grid-cols-4 sm:gap-x-16 md:grid-cols-5 md:gap-x-18 lg:grid-cols-6 lg:gap-x-24 place-items-center justify-items-center gap-x-12 pt-18"
+      >
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/nextjs-icon.svg" className="h-10" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/react-icon.svg" className="h-10" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/js-icon.svg" className="h-10" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/ts-icon.svg" className="h-10" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/python-icon.svg" className="h-10" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/cpp-icon.svg" className="h-10" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/tailwindcss-icon.svg" className="h-10" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/nodejs-icon.svg" className="w-14" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/supabase-icon.svg" className="w-20" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/mongodb-icon.svg" className="w-20" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/mysql-icon.svg" className="w-15" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/ros-icon.svg" className="w-15" />
+        </div>
+        <div className="w-20 h-20 flex items-center justify-center">
+          <img src="/git-icon.svg" className="w-10" />
+        </div>
+      </motion.div>
     </div>
   );
 }

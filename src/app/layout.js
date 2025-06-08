@@ -43,7 +43,11 @@ export const lobsterFont = Lobster({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="cupcake" className="scroll-smooth">
+    <html
+      lang="en"
+      data-theme="cupcake"
+      className="scroll-smooth max-w-full overflow-x-hidden"
+    >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen justify-between`}
       >
